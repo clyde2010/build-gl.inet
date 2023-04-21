@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       tag_main:
-        description: 'v4.2.0_release3'     
+        description: 'gl-infra-builder tag'     
         required: true
-        default: 'main' 
+        default: 'v4.2.0_release3' 
 
       device:
         description: '选择设备'     
@@ -33,9 +33,9 @@ on:
         type: boolean
       
       tag_no:
-        description: 'v4.2.0_release3'     
+        description: 'glinet4.x tag'     
         required: true
-        default: 'main' 
+        default: 'v4.2.0_release3' 
         
 jobs:
   build:
