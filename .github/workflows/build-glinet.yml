@@ -4,14 +4,14 @@ on:
   workflow_dispatch:
     inputs:
       tag_main:
-        description: '请输入gl-inet/gl-infra-builder TAG'     
+        description: 'v4.2.0_release3'     
         required: true
         default: 'main' 
 
       device:
         description: '选择设备'     
         required: true
-        default: 'target_wlan_ap-gl-ax1800' 
+        default: 'target_mt7981_gl-mt2500' 
         type: choice
         options:
         - target_wlan_ap-gl-ax1800
@@ -29,11 +29,11 @@ on:
 
       ui:
         description: '是否包含官方UI (目前支持IPQ6018系列、mt7981系列、GL-A1300和GL-S200)'
-        required: false
+        required: true
         type: boolean
       
       tag_no:
-        description: '请输入gl-inet/glinet4.x TAG'     
+        description: 'v4.2.0_release3'     
         required: true
         default: 'main' 
         
